@@ -1,0 +1,47 @@
+
+body{
+    color: #2E2F42;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+
+}
+
+/* Logo */
+.logo {
+    text-decoration: none;
+    color: #2E2F42;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+}
+.logo-text {
+    color: #4D5AE5;
+}
+
+/* Navigation */
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.list-page .link {
+    color: #2E2F42;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.list-info .link {
+    color: #434455;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
