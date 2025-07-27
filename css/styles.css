@@ -45,3 +45,53 @@ body{
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
+.link:hover,
+.link:focus {
+    color: #4D5AE5;
+} 
+.list-page .link-active {
+    color: #404BBF;
+}
+/* Hero */
+.hero {
+    background-color: #2E2F42;
+}
+h1 {
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+}
+
+/* Section */
+.title {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-align: center;
+
+}
+.text {
+    color: #434455;
+    line-height: 1.5;
+}
+/* section of services */
+.subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+
+/* footer */
+.footer {
+    background-color: #2E2F42;
+}
+.text-footer {
+    color: #F4F4FD;
+}
+.logo-footer{
+    color: #F4F4FD
+}
+
