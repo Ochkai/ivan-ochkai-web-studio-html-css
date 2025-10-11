@@ -1,11 +1,46 @@
-
-body{
+body {
     color: #2E2F42;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.02em;
 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists */
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Logo */
@@ -18,17 +53,32 @@ body{
     letter-spacing: 0.03em;
     line-height: 1.17;
 }
+
+.logo-title {
+    margin-right: 76px;
+}
+
 .logo-text {
     color: #4D5AE5;
 }
 
-/* Navigation */
-.list {
-    list-style: none;
+/* Header */
+
+.page-header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
-.link {
-    text-decoration: none;
+
+.nav .list-page {
+    display: flex;
 }
+
+.page-header .list-info {
+    display: flex;
+    margin-left: auto;
+}
+
 .list-page .link {
     color: #2E2F42;
     font-family: 'Roboto', sans-serif;
@@ -37,45 +87,100 @@ body{
     font-weight: 500;
     line-height: 1.5;
 }
+
 .list-info .link {
     color: #434455;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
+
 .link:hover,
 .link:focus {
     color: #4D5AE5;
-} 
+}
+
 .list-page .link-active {
     color: #404BBF;
 }
+
+.list-page .list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.list-info .list-item:not(:last-child) {
+
+    margin-right: 40px;
+}
+
 /* Hero */
 .hero {
     background-color: #2E2F42;
+
+    text-align: center;
 }
-h1 {
+
+.hero-title {
+    margin-bottom: 40px;
+
     color: #ffffff;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.1;
+}
+
+/* Button */
+.hero .button {
     text-align: center;
+    padding: 16px 32px;
+    min-width: 170px;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #404BBF;
+
+    cursor: pointer;
 }
 
 /* Section */
+
+.list-section {
+    display: flex;
+}
+
+.list-section .item:not(:last-child) {
+    margin-right: 24px;
+
+}
+
+.section:not(:last-child) {
+    margin-bottom: 120px;
+}
+
 .title {
+    margin-bottom: 72px;
+
     font-size: 36px;
     font-weight: 800;
     line-height: 1.2;
     text-align: center;
+    line-height: 1.5;
 
 }
+
 .text {
     color: #434455;
     line-height: 1.5;
+    margin: 0;
 }
+
 /* section of services */
 .subtitle {
     font-size: 20px;
@@ -84,14 +189,116 @@ h1 {
 
 }
 
+/* Our Team */
+
+.section-team {
+
+    background-color: #F4F4FD;
+}
+
+.section-team .item {
+    margin-bottom: 120px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.section-team .subtitle {
+
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.section-team .text {
+    margin-bottom: 32px;
+}
+
+/* Filter */
+
+.lists-button {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.lists-button .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.lists-button .button {
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.lists-button .button:hover,
+.lists-button .button:focus {
+    color: #ffffff;
+    background-color: #404BBF;
+
+    cursor: pointer;
+
+}
+
+/* Cards */
+
+
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.card-item:nth-last-child(-n + 3) {
+    margin-bottom: 120px;
+}
+
+.card-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card-item .subtitle {
+
+    margin-bottom: 8px;
+}
+
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+}
+
 /* footer */
 .footer {
     background-color: #2E2F42;
 }
+
 .text-footer {
     color: #F4F4FD;
 }
-.logo-footer{
+
+.logo-footer {
     color: #F4F4FD
 }
+
 
